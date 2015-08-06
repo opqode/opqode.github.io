@@ -481,3 +481,17 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+.navbar-default .navbar-header {
+    background-position-x: 0;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+}
+
+.navbar-default .navbar-header {
+    background-image: url(../img/opqode_logo_light.svg);
+}
+
+.navbar-default.affix .navbar-header {
+    background-image: url(../img/opqode_logo.svg);
+}
