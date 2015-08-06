@@ -88,8 +88,9 @@ aside {
 .navbar-default .navbar-header .navbar-brand {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    font-weight: 700;
+    /* font-weight: 700; */
     color: #f05f40;
+    padding-top: 10px;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -129,7 +130,11 @@ aside {
 
     .navbar-default .navbar-header .navbar-brand {
         color: rgba(255,255,255,.7);
-    }
+    
+        padding-top: 10px;
+}
+
+a.navbar-brand.page-scroll {}
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
@@ -148,8 +153,10 @@ aside {
 
     .navbar-default.affix {
         border-color: rgba(34,34,34,.05);
-        background-color: #fff;
-    }
+        background-color: rgba(255, 255, 255, 0.94);
+    
+        box-shadow: rgb(0, 0, 0) 0px 1px 4px -1px;
+}
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
@@ -178,7 +185,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/woman-hand-smartphone-laptop.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -196,7 +203,7 @@ header .header-content {
 header .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 700;
 }
 
@@ -208,7 +215,7 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(255,255,255,.7);
+    color: rgba(255, 255, 255, 1);
 }
 
 @media(min-width:768px) {
