@@ -21,6 +21,7 @@
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
@@ -97,11 +98,84 @@
         </div>
     </section>
 
-    <section id="features">
+    <section id="features" class="half-wrapper">
+		<div class="container half-full">
+			<div class="row">
+				<div class="col-md-6 half-column pull-left">
+					<div class="fluid flexslider" style="width: 429px; left: -44px; padding-left: 44px;">
+                        <ul class="slides">
+                           <li>
+                              <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg" width="800" height="504" alt="" />
+                            </li>
+                            <li>
+                              <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg" width="800" height="504" alt="" />
+                            </li>
+                            <li>
+                              <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg" width="800" height="504" alt="" />
+                            </li>
+                            <li>
+                              <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" width="800" height="504" alt="" />
+                            </li>
+                          </ul>
+   						</div>
+					</div>
+				</div>
+				<div class="col-md-6 half-column pull-right">
+					<div class="half-col-containt flexslider-controls">
+						<div class="heading">
+							<h5>Features</h5>
+							<!--p>Key of features, this a reason why choose sugan</p-->
+							<span></span>
+						</div>
+						<ul class="feature-list flex-control-nav">
+							<li>
+								<span class="fa fa-2x fa-code wow bounceIn text-primary icon-color icon-left"></span>
+								<h5>Structured Text Input</h5>
+								<p>
+								Industry-standard DocBook, reStructuredText, Sphinx, Markdown, ...
+								Focus on content
+								Semantic
+								</p>
+							</li>
+							<li>
+								<span class="fa fa-2x fa-th-large wow bounceIn text-primary icon-color icon-left"></span>
+								<h5>Advanced Automatic Layout</h5>
+								<p>
+								RinohType automates the processing complex documents that
+								are typically formatted manually. RinohType automatically places
+								document elements such as figures, tables and footnotes.
+								</p>
+							</li>
+							<li>
+								<span class="fa fa-2x fa-sliders wow bounceIn text-primary icon-color icon-left"></span>
+								<h5>Easy Document Styling</h5>
+								<p>
+								Change any aspect of your document's style.
+								Style sheets similar to CSS, but more powerful.
+								</p>
+							</li>
+							<li>
+								<span class="fa fa-2x fa-book wow bounceIn text-primary icon-color icon-left"></span>
+								<h5>Custom Document Templates</h5>
+								<p>
+								Change an existing document template to your needs,
+								or create a custom template from scratch.
+								RinohType can handle anything from stylish flyers and catalogs to
+								long technical documents.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <section id="morefeatures">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Features</h2>
+                    <h2 class="section-heading">More Features</h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -110,30 +184,30 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                        <i class="fa fa-4x fa-language wow bounceIn text-primary"></i>
+                        <h3>Unicode</h3>
+                        <p class="text-muted">Built on Unicode, RinohType handles multiple languages effortlessly.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-font wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Fonts</h3>
+                        <p class="text-muted">Handles OpenType, TrueType and Type1 fonts with support for advanced typographic features such as kerning and ligatures.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-picture-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Embed Images</h3>
+                        <p class="text-muted">Embed PDF, PNG and JPEG images as-is.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        <h3>Lightweight</h3>
+                        <p class="text-muted">RinohType is a pure-Python library and has few dependencies, so it is very easy to deploy.</p>
                     </div>
                 </div>
             </div>
@@ -276,9 +350,21 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+    
+    <script>
+        var $flexslider = $('.flexslider');
+        $flexslider.flexslider({
+          animation: "swing",
+          direction: "vertical",
+          manualControls: ".flex-control-nav li",
+          directionNav: false,
+          useCSS: false /* Chrome fix*/
+        });
+    </script>
 
 </body>
 

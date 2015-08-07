@@ -498,3 +498,25 @@ body {
     background-image: url(../img/opqode_logo.svg);
 }
 
+
+.feature-list .fa.fa-2x.icon-left {
+    float:  left;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.feature-list li {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+.feature-list h5 {
+    font-size: 18px; font-weight: bold;
+}
+
+.feature-list .flex-active {
+    background-color: rgba(0, 0, 0, 0.06);
+}
