@@ -500,18 +500,40 @@ body {
 }
 
 
+.flexslider-controls hr {
+    text-align: left;
+    margin-left: 0;
+}
+
+.feature-list {
+    padding-left: 10px;
+}
+
 .feature-list .fa.fa-2x.icon-left {
-    float:  left;
-    margin-bottom: 40px;
     margin-left: 0px;
     margin-right: 20px;
     margin-top: 5px;
+    max-width: 100%;
+    overflow: hidden;
+    float: left;
 }
 
 .feature-list li {
     list-style-image: none;
     list-style-position: outside;
     list-style-type: none;
+    padding: 15px;
+    border-bottom: 1px solid #e0e1e4;
+    cursor: pointer;
+}
+
+.feature-list .feature {
+    overflow: hidden;
+}
+
+.feature-list li p {
+    margin-bottom: 0;
+    font-size: 14px;
 }
 
 .feature-list h5 {
