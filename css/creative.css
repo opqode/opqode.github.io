@@ -91,7 +91,6 @@ aside {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     /* font-weight: 700; */
     color: #f05f40;
-    padding-top: 10px;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -139,7 +138,6 @@ aside {
 
     .navbar-default .navbar-header .navbar-brand {
         color: rgba(255,255,255,.7);
-        padding-top: 10px;
     }
 
     a.navbar-brand.page-scroll {}
@@ -493,15 +491,11 @@ body {
 
 .navbar-default .navbar-brand {
     width: 212px;
-    background-position-x: 10px;
-    background-position-y: 10px;
-    background-repeat: no-repeat;
-}
-
-.navbar-default .navbar-brand {
     background-image: url(../img/opqode_logo.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: none;
 }
-
 
 .flexslider-controls hr {
     text-align: left;
