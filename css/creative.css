@@ -521,7 +521,6 @@ body {
     list-style-type: none;
     padding: 15px;
     border-bottom: 1px solid #e0e1e4;
-    cursor: pointer;
 }
 
 .feature-list .feature {
@@ -537,6 +536,12 @@ body {
     font-size: 18px; font-weight: bold;
 }
 
-.feature-list .flex-active {
-    background-color: rgba(0, 0, 0, 0.06);
+@media(min-width:992px) {
+    .feature-list li {
+        cursor: pointer;
+    }
+
+    .feature-list .flex-active {
+        background-color: rgba(0, 0, 0, 0.06);
+    }
 }
