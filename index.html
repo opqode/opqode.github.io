@@ -98,11 +98,11 @@
         </div>
     </section>
 
-    <section id="features" class="half-wrapper">
-		<div class="container half-full">
+    <section id="features">
+		<div class="container">
 			<div class="row">
-				<div class="col-md-6 half-column pull-left">
-					<div class="fluid flexslider" style="width: 429px; left: -44px; padding-left: 44px;">
+				<div class="col-md-6">
+					<div class="flexslider">
                         <ul class="slides">
                            <li>
                               <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg" width="800" height="504" alt="" />
@@ -116,18 +116,18 @@
                             <li>
                               <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" width="800" height="504" alt="" />
                             </li>
-                          </ul>
-   						</div>
+                        </ul>
 					</div>
 				</div>
-				<div class="col-md-6 half-column pull-right">
-					<div class="half-col-containt flexslider-controls">
-						<div class="heading">
-							<h5>Features</h5>
+				<div class="col-md-6 text-center">
+					<div class="flexslider-controls">
+						<div class="col-lg-12 text-center">
+							<h2 class="section-heading">Features</h2>
+							<hr class="primary">
 							<!--p>Key of features, this a reason why choose sugan</p-->
 							<span></span>
 						</div>
-						<ul class="feature-list flex-control-nav">
+						<ul class="feature-list">
 							<li>
 								<span class="fa fa-2x fa-code wow bounceIn text-primary icon-color icon-left"></span>
 								<h5>Structured Text Input</h5>
@@ -186,7 +186,7 @@
                     <div class="service-box">
                         <i class="fa fa-4x fa-language wow bounceIn text-primary"></i>
                         <h3>Unicode</h3>
-                        <p class="text-muted">Built on Unicode, RinohType handles multiple languages effortlessly.</p>
+                        <p class="text-muted">Built on Unicode, RinohType is ready to support multiple languages.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -200,7 +200,7 @@
                     <div class="service-box">
                         <i class="fa fa-4x fa-picture-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
                         <h3>Embed Images</h3>
-                        <p class="text-muted">Embed PDF, PNG and JPEG images as-is.</p>
+                        <p class="text-muted">Embed PDF, PNG and JPEG images as-is, preserving transparency and color profiles.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -360,7 +360,7 @@
         $flexslider.flexslider({
           animation: "swing",
           direction: "vertical",
-          manualControls: ".flex-control-nav li",
+          manualControls: ".feature-list li",
           directionNav: false,
           useCSS: false /* Chrome fix*/
         });
