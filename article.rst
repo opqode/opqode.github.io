@@ -1,19 +1,18 @@
 .. This is a reStructuredText file describing the contents of an article
    to be typeset by RinohType.
 
-=========================
- RinohType Demonstration
-=========================
+=================
+ About RinohType
+=================
 
 :author: Brecht Machiels
 :organization: Opqode
 
 :abstract:
 
-    This document introduces RinohType and illustrates some of its features. The
+    This article introduces RinohType and illustrates some of its features. The
     source for this document is a plain text file, marked up using the
-    reStructuredText syntax. This format is also briefly discussed in this
-    article.
+    reStructuredText syntax which is briefly discussed in this article.
 
 
 Introduction
@@ -29,8 +28,8 @@ presentation brings numerous advantages:
 
 * it is easy to consistently change style aspects of a document without manual
   reworking of the document
-* the document can be published in multiple formats: web, e-book, print, audio
-  and braille for example
+* the document can be published from a single source to multiple formats: web,
+  e-book, print, audio and braille for example
 * the document can be automatically be reformatted to fit different page or
   screen sizes
 * the document can be translated without the risk of breaking the styling
@@ -44,14 +43,8 @@ sheet. These will be discussed in the next section.
 .. _Python: http://www.python.org
 
 
-Features
-========
-
-This section summarizes RinohType's most important features.
-
-
 Typesetting and Automation
---------------------------
+==========================
 
 Readability of text is improved by kerning glyphs and substituting ligatures.
 Words can automatically be hyphenated, if the document's language is specified.
@@ -67,15 +60,17 @@ generates the table of contents based on the sections present in the document.
 
 
 Document Elements
------------------
+=================
 
-RinohType supports all common document elements. Paragraphs contain text and
-may contain inline markup such as *emphasis*, **strong emphasis** and
-``inline literals``. You can have :sub:`subscript`, :sup:`superscript` and even
-inline images (|biohazard|). Here's a hyperlink to the `Opqode website
-<http://www.opqode.com>`_. A cross-reference to the `Document Templates`_
-section is also represented as a hyperlink. This sentences includes a
-reference\ [1]_ for a footnote at the bottom of this page.
+.. |inlineimg| image:: static/biohazard.png
+
+RinohType supports all common document elements. Paragraphs may contain inline
+markup such as *emphasis*, **strong emphasis** and ``inline literals``. You can
+have :sub:`subscript`, :sup:`superscript` and even inline images (|inlineimg|).
+Here's a hyperlink to the `Opqode website <http://www.opqode.com>`_. A
+cross-reference to another section, such as `Document Templates`_ is also
+represented as a hyperlink. This sentences includes a reference\ [1]_ for a
+footnote at the bottom of this page.
 
 .. [1] Footnotes are not limited to text. They can contain the same body
        elements that can also be used in the main text.
@@ -133,19 +128,20 @@ columns can be sized automatically based on their contents.
 
 RinohType natively supports PDF, PNG and JPEG images. Images in other formats
 can be loaded if Pillow_ is available. Images with transparency are fully
-supported. If present, embedded color profiles are preserved. Below, a PNG image
-is included.
+supported. If present, embedded color profiles are preserved. Below, a bitmap
+image is included.
 
-.. image:: images/title.png
+.. image:: static/title.png
 
 .. _Pillow: https://python-pillow.github.io
 
 Images and tables can optionally be floated to the top or bottom of the page.
 For images, this is done by wrapping the image in a figure along with a caption.
-The image above is also included in, which will float to the top of this page.
+A vector image is included in a figure which floats to the top of this page.
 
-.. figure:: images/title.png
-   :alt: reStructuredText, the markup syntax
+.. figure:: static/python-powered-w.pdf
+   :scale: 30%
+   :alt: Python powered
 
    A figure is an image with a caption.
 
@@ -163,7 +159,7 @@ with RinohType.
 
 
 Style Sheets
-------------
+============
 
 RinohType makes use of style sheets to determine the presentation of a document.
 Similar to the web's `Cascading Style Sheets`_ (CSS), RinohType's style sheets
@@ -197,7 +193,7 @@ variables, a feature sorely missing from CSS.
 
 
 Document Templates
-------------------
+==================
 
 Style sheets determine how individual elements are presented in the document.
 Other aspects of the document's presentation are handled by the document
@@ -217,9 +213,9 @@ goes on.
 
 
 Citations and Bibliography
---------------------------
+==========================
 
-For documents that reference other documents a RinohType's sister-project
+For documents that reference other documents RinohType's sister-project
 citeproc-py_ automates the formatting of citations and bibliographies. Simply
 choose one of the 7500+ citations styles available from the CSL_ project,
 reference other documents by ID, and citeproc will ensure that your citations
@@ -229,8 +225,8 @@ and bibliography are properly formatted.
 .. _citeproc-py: https://pypi.python.org/pypi/citeproc-py/
 
 
-Multiple Frontends and Backends
--------------------------------
+Frontends and Backends
+======================
 
 Thanks to its modular design, RinohType can be easily extended to support
 other input and output formats.
@@ -239,18 +235,18 @@ other input and output formats.
 
 A frontend transforms the input document's native document tree to RinohType's
 internal document tree. Already included with RinohType is a comprehensive
-reStructuredText_ frontend. This very article is written in reStructuredText!
-reStructuredText is a lightweight plain text markup syntax that can be used to
-express a wide range of document types. It can be unambiguously parsed by
-computer software, yet it still is comfortable to read and write by humans,
-unlike XML. It relies on certain consistent patterns to express many different
-types of document elements.
+reStructuredText_ frontend. reStructuredText is a lightweight plain text markup
+syntax that can be used to express a wide range of document types. It can be
+unambiguously parsed by computer software, yet it still is comfortable to read
+and write by humans, unlike XML. It relies on certain consistent patterns to
+express many different types of document elements. The source of this article is
+written in reStructuredText!
 
 An important feature of reStructuredText is its extensibility. By defining new
-*roles* and *directives* custom elements can be added to the document. This
+roles* and *directives* custom elements can be added to the document. This
 allows customizing your documents to your application domain. Defining
-corresponding RinohType styles or even custom flowables determines how these
-new document elements are represented in the final rendered document.
+corresponding RinohType styles or even custom flowables determines how these new
+document elements are represented in the final rendered document.
 
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html
 
@@ -268,16 +264,35 @@ corresponding RinohType's element. The reStructuredText frontend for example
 takes up less than a 1000 lines of Python code.
 
 
-Python
-------
+Built on Python
+===============
+
+RinohType was initially developed as a modern replacement for LaTeX_. An
+important goal in the design of RinohType is to improve upon LaTeX. More
+specifically, RinohType should be much easier to customize. By today's
+standards, the arcane TeX macro language upon which LaTeX is built makes
+customization extremely difficult.
+
+.. _LaTeX: https://www.latex-project.org
+
+.. RinohType was initially developed as a modern replacement for LaTeX_. An
+important goal in the design of RinohType is to improve upon LaTeX. More
+specifically, RinohType should be much easier to use and customize. LaTeX is
+notorious for its cryptic error messages, for example. And by today's standards,
+the arcane TeX macro language upon which LaTeX is built makes customizing the
+style of documents extremely difficult. Contrast this with RinohType's small,
+modular Python code base, as discussed in the previous section,
+`Built on Python`_. The use of `style sheets`_ and configurable
+`document templates`_ allows for extensive customization even without the need
+to write Python source code.
 
 RinohType is written in Python_, an easy to learn, high-level programming
 language. Python's elegance and RinohType's simple, modular design make it easy
 to customize and extend for specific applications. Because RinohType is an open
 source project (but not free for commercial use), all of its internals can be
-inspected and even modified, making it very customizable. Additionally,
-RinohType's core source code consists of less than 4000 lines, making it very
-accessible to understand and modify.
+inspected and modified, making it extremely customizable. Moreover, RinohType's
+core source code consists of less than 4000 lines, making it very accessible to
+interpretation and modification.
 
 RinohType is a pure-Python application. This means that it does not rely on
 any compiled extensions, making it very easy to deploy. Care is also taken to
@@ -292,24 +307,44 @@ packages.
 Because RinohType does not rely on compiled extensions, it can be easily run on
 alternative interpreters such as PyPy_, Jython_ and IronPython_. PyPy can run
 Python applications at much higher speeds compared to the reference interpreter,
-CPython. Jython and IronPython allow embedding RinohType inside Java and .NET
-software. Unfortunately, both do not yet support version 3 of the Python language
-which RinohType is written in. Depending on the interest in running RinohType on
-these alternative Python implementations, RinohType might get backported to
-Python 2.
+CPython. Jython and IronPython allow embedding Python software inside Java and
+NET software. Unfortunately, both do not yet support version 3 of the Python
+language which RinohType is written in. Depending on the interest in running
+RinohType on these alternative Python implementations, RinohType might get
+backported to Python 2.
 
 .. _PyPy: http://pypy.org
 .. _Jython: http://www.jython.org
 .. _IronPython: http://ironpython.net
 
 
-Conclusion
-==========
+Applications
+============
 
-improve on LaTeX?
+RinohType was originally designed for typesetting technical or scientific
+documents. However, it is perfectly capable of publishing other types of
+documents as well, as these are typically less complex in nature.
 
-applications:
-* technical books, manuals & articles, but also for prose
-* marketing material automation: catalogs, folders (RinohType example here?)
-* simple documents: invoices, tickets (~PDF library)
+RinohType is especially suited for typesetting documents in a fully automated
+way based on a document template and stylesheet. Examples include:
 
+* (technical) books, manuals and articles
+* marketing brochures
+* product catalogues
+* financial/test/QA reports
+* data/fact sheets
+* certificates
+
+For books, manuals, articles and brochures, the document's content can be
+described in XML or another structured text format in single-source publishing
+workflow. This source document can optionally be automatically fetched from a
+content management system. For other document such as catalogues or reports,
+the content will typically originate from a database. As the database is updated
+with new data, new documents can easily be generated without the need for manual
+intervention. Some document types will require the combination of structured
+text input and data fetched from a database.
+
+RinohType can also be used where lower-level PDF libraries are typically used
+for generating small PDF documents such as **invoices** and **tickets** on
+websites. RinohType's advanced layout engine offers some advantages over PDF
+libraries, while still being very lightweight.
