@@ -93,13 +93,16 @@
             <div class="row">
                 <form action="http://rinohdemo-opqode.rhcloud.com" method="POST">
                     <input type="hidden" name="filename" value="RinohType"/>
-                    <div class="col-md-7">
-                        <textarea id="rinohdemo-editor" name="content"></textarea>
-                    </div>
-                    <div class="col-md-5 text-center">
+                    <div class="col-xs-12 col-sm-12 col-md-5 pull-right text-center">
                         <h2 class="section-heading">RinohType in Action!</h2>
                         <hr class="light">
-                        <p class="text-faded">This <em>editable</em> text area contains the content of a small article. Clicking the button below renders the article to PDF using a custom stylesheet <a href="https://github.com/opqode/rinohdemo/blob/master/template.py"><i class="fa fa-external-link text-faded"></i></a>. After a few seconds the PDF will be offered for download.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7 pull-left">
+                        <textarea id="rinohdemo-editor" name="content"></textarea>
+                    </div>
+                    <div class="clearfix visible-sm"></div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 pull-right text-center">
+                        <p class="demo-text text-faded">This <em>editable</em> text area contains the content of a small article. Clicking the button below renders the article to PDF using a custom stylesheet <a href="https://github.com/opqode/rinohdemo/blob/master/template.py"><i class="fa fa-external-link text-faded"></i></a>. After a few seconds the PDF will be offered for download.</p>
                         <input type="submit" class="btn btn-default btn-xl" value="Render Article" />
                     </div>
                 <form>
@@ -231,7 +234,6 @@
             </div>
         </div>
     </aside>
-
 
     <section id="contact">
         <div class="container">
