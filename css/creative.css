@@ -513,6 +513,11 @@ body {
     border-top-width: 1px;
 }
 
+.flexslider {
+    background: transparent;
+    border: 0;
+}
+
 .flexslider-controls hr {
     text-align: left;
     margin-left: 0;
