@@ -1,0 +1,3 @@
+[submodule "rinohdemo"]
+	path = rinohdemo
+	url = https://github.com/opqode/rinohdemo.git
