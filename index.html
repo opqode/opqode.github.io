@@ -274,6 +274,10 @@
           directionNav: false,
           useCSS: false /* Chrome fix*/
         });
+        
+        $('div.feature a').click(function(evt) {
+            evt.stopPropagation();
+        });
     </script>
 
     <script>
