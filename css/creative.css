@@ -579,5 +579,7 @@ body {
 }
 
 .CodeMirror {
+    margin: auto;
     font-size: 12px;
+    max-width: 560px;
 }
