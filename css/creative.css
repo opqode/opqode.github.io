@@ -134,7 +134,7 @@ aside {
 	}
 
     .navbar-default.affix-top .navbar-brand {
-        background-image: url(../img/opqode_logo_light.svg);
+        background-image: url(../img/rinohtype_logo_light.svg);
     }
 
     .navbar-default .navbar-header .navbar-brand {
@@ -502,7 +502,7 @@ body {
 
 .navbar-default .navbar-brand {
     width: 212px;
-    background-image: url(../img/opqode_logo.svg);
+    background-image: url(../img/rinohtype_logo.svg);
     background-position: center center;
     background-repeat: no-repeat;
     transition: none;
