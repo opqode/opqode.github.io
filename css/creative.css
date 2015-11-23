@@ -58,7 +58,7 @@ p {
 
 .bg-dark {
     color: #fff;
-    background-color: #222;
+    background: linear-gradient(-320deg, rgb(60, 33, 89) 0%,rgb(30, 93, 118) 100%);
 }
 
 .text-faded {
@@ -514,7 +514,14 @@ body {
 }
 
 #concepts {
-    background-image: url(../img/paper_fibers.png);
+    background: linear-gradient(90deg, #d0d7e0 0%, #FFF 98%);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #CCCCCC;
+}
+
+#features {
+    background: linear-gradient(180deg, rgb(251, 234, 234) 0%, rgb(255, 255, 255) 50%);
 }
 
 .bg-secondary {
