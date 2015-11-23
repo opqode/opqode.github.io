@@ -135,6 +135,7 @@ aside {
 
     .navbar-default.affix-top .navbar-brand {
         background-image: url(../img/rinohtype_logo_light.svg);
+        background-size: 120px;
     }
 
     .navbar-default .navbar-header .navbar-brand {
@@ -502,6 +503,7 @@ body {
 .navbar-default .navbar-brand {
     width: 212px;
     background-image: url(../img/rinohtype_logo.svg);
+    background-size: 120px;
     background-position: center center;
     background-repeat: no-repeat;
     transition: none;
