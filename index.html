@@ -65,6 +65,9 @@
                     <li>
                         <a class="page-scroll" href="#features">Features</a>
                     </li>
+                    <li>
+                        <a class="btn btn-primary outline page-scroll" href="#call-to-action">Free Beta</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -100,7 +103,7 @@
                         <p class="demo-text text-faded">This <em>editable</em> text area contains the content of a small article. Clicking the button below renders the article to PDF using a custom stylesheet <a href="https://github.com/opqode/rinohdemo/blob/master/template.py"><i class="fa fa-external-link text-faded"></i></a>. After a few seconds the PDF will be offered for download.</p>
                         <input type="submit" class="btn btn-default btn-xl" value="Render Article" />
                     </div>
-                <form>
+                </form>
             </div>
         </div>
     </section>
@@ -208,17 +211,27 @@
         </div>
     </section>
 
-    <aside class="bg-dark wow fadeIn">
+    <section id="call-to-action">
         <div class="container text-center">
-            <div class="call-to-action">
-                <h2>RinohType is Open Source!</h2>
-                <p>RinohType is also <em>free for non-commercial use</em>.
-                <br/>For commercial use you need a <em>commercial license</em>.
-                <br/>You can evaluate RinohType free of charge, however.</p>
-                <a href="https://github.com/brechtm/rinohtype" class="btn btn-default btn-xl">Browse the Source</a>
+            <div class="row">
+                <h2>Join the Free Beta Program</h2>
+                <hr/>
+                <p>RinohType is almost ready for prime-time. We'll soon launch a beta program for commercial users.
+                <br/>Please leave your email address below if are interested in joining.</p>
+
+                <!--form class="form-inline" role="form" action="http://joinbeta-opqode.rhcloud.com/pdf" method="POST"-->
+                <form class="form-inline" role="form" id="joinbeta" action="http://localhost:5000/pdf" method="POST">
+                    <div class="form-group">
+                        <label class="sr-only" for="email">Email address</label>
+                        <input type="email" class="form-control form-control-inline" name="email" id="email" placeholder="Enter email" required>
+                        <button type="submit" class="btn btn-success btn-md">
+                            <i class="fa fa-envelope"></i>&nbsp;&nbsp;Sign Up
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
-    </aside>
+    </section>
 
     <footer class="center">
         <div class="container">
@@ -251,6 +264,7 @@
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
@@ -279,6 +293,22 @@
         
         $('div.feature a').click(function(evt) {
             evt.stopPropagation();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#joinbeta').validate({
+                errorPlacement: function(error,element) {
+                    return true;
+                },
+                highlight: function(element) {
+                    $(element).closest('.form-group').addClass('has-error');
+                },
+                unhighlight: function(element) {
+                    $(element).closest('.form-group').removeClass('has-error');
+                }
+            });
         });
     </script>
 

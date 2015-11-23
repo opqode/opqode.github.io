@@ -459,6 +459,22 @@ fieldset[disabled] .btn-primary.active {
     background-color: #fff;
 }
 
+.btn.outline {
+    background: none;
+    padding: 6px 11px;
+    margin: 6px 11px;
+    border-radius: 10px;
+}
+
+.btn-primary.outline {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.affix .btn-primary.outline {
+    border-color: #000;
+}
+
 .btn {
     border: 0;
     text-transform: uppercase;
@@ -523,6 +539,11 @@ body {
 
 #features {
     background: linear-gradient(180deg, rgb(251, 234, 234) 0%, rgb(255, 255, 255) 50%);
+}
+
+#call-to-action {
+    color: #FFFFFF;
+    background: linear-gradient(-320deg, rgb(60, 33, 89) 0%,rgb(30, 93, 118) 100%);
 }
 
 .bg-secondary {
@@ -611,4 +632,14 @@ footer ul.quicklinks {
     margin-bottom: 0;
     line-height: 40px;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.form-control-inline {
+    min-width: 0;
+    width: auto;
+    display: inline;
+}
+
+.has-error .form-control {
+  border-width: thick;
 }
