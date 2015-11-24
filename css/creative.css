@@ -198,6 +198,17 @@ header {
     -o-background-size: cover;
 }
 
+header.thankyou {
+    background: linear-gradient(-320deg, rgb(60, 33, 89) 0%,rgb(30, 93, 118) 100%);
+    background-size: cover;
+}
+
+header.thankyou::before {
+    content: '';
+    position: absolute;
+    background-color: initial;
+}
+
 header::before {
     content: '';
     position: absolute;
@@ -642,4 +653,14 @@ footer ul.quicklinks {
 
 .has-error .form-control {
   border-width: thick;
+}
+
+form#pdfextra label {
+    display: block;
+}
+
+form#pdfextra input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
 }

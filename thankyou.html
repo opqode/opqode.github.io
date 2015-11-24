@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Thank you</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+</head>
+
+<body id="page-top" onload="$.get('http://opqode.pythonanywhere.com/wake')">
+
+    <header class="thankyou">
+        <div class="header-content">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <h1>Thank you!</h1>
+                    <p>We'll send you a message as soon as the beta is ready.</p>
+                    <hr/>
+                    <h3>If you have another minute...</h3>
+                    <p>Your feedback is invaluable to us. We'd really appreciate it if you could answer the following questions (all fields are optional).</p>
+                </div>
+                <div class="col-md-6 text-left">
+                    <form id="pdfextra" action="http://joinbeta-opqode.rhcloud.com/pdfextra" method="POST">
+                        <input type="hidden" name="id" value="{{ id }}" />
+                        <label for="application">What type of documents would you generate using rinohtype?</label>
+                        <input type="text" name="application" />
+                        <label for="feature">Which is or would be rinohtype's killer feature for you?</label>
+                        <input type="text" name="feature" />
+                        <label for="pages">Roughly how many pages would you generate per month?</label>
+                        <input type="text" name="pages" />
+                        <label for="other">Any other feedback? <small>e.g. feature ideas, something not clear, ...</small></label>
+                        <textarea name="other" rows="5"></textarea>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success">Submit Feedback</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>
